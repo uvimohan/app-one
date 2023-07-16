@@ -8,9 +8,21 @@ function App() {
 		setDarkTheme(theme => !isDarkTheme);
 	}
 
+	const defaultStyle = {
+		height: "100vh",
+		padding: "1rem"
+	}
+
+	const darkThemeStyle = {
+		color: "#fff",
+		backgroundColor: "#000",
+		height: "100vh",
+		padding: "1rem"
+	}
+
 	return (
 		<ThemeProvider.Provider value={isDarkTheme}>
-			<div className="App">
+			<div className="App" style={isDarkTheme ? darkThemeStyle : defaultStyle}>
 				<h2>Hello, World!</h2>
 				<button onClick={toggleTheme}>Toggle Theme</button>
 				{
