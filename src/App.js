@@ -26,7 +26,7 @@ function App() {
 				<h2>Hello, World!</h2>
 				<button onClick={toggleTheme}>Toggle Theme</button>
 				{
-					isDarkTheme ? <h3>Dark</h3> : <h3>Light</h3>
+					isDarkTheme ? <h3>Login</h3> : <h3>Logout</h3>
 				}
 				<Acomponent />
 			</div>
